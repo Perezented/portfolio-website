@@ -202,6 +202,12 @@ body {
   font-size: 3rem;
   padding: 0 3% 10% 0;
 }
+.projectHighlights h2 {
+  padding: 2% 0;
+}
+.projectHighlights p {
+  padding: 2% 0;
+}
 .projectHighlights .rect {
   border: 1px solid pink;
   margin: 2%;
@@ -228,6 +234,9 @@ body {
 .moreProjects {
   padding: 2% 0;
 }
+.moreProjects p {
+  padding: 2% 0;
+}
 .moreProjects .moreHeading {
   display: flex;
   flex-direction: column;
@@ -237,18 +246,66 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  border: 1px solid magenta;
+}
+.moreProjects .moreTiles .tiles {
+  border: 1px solid maroon;
+  margin: 5% 10%;
+}
+.moreProjects .moreTiles h4,
+.moreProjects .moreTiles p,
+.moreProjects .moreTiles button {
+  margin: 2% 5%;
 }
 .contact {
   padding: 2% 0;
 }
 .contact h5 {
   text-align: center;
+  padding-bottom: 2%;
 }
 .contact p {
   text-align: center;
 }
 .contact .contactColumns {
-  padding: 10%;
+  border: 1px solid blue;
+  margin: 3% 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.contact .twoColumn {
+  border: 1px solid grey;
+  width: 40%;
+}
+.contact .twoColumn li {
+  padding: 1.5%;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.contact .twoColumn form {
+  border: 1px solid orangered;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact .twoColumn form input {
+  width: 25vw;
+}
+.contact .twoColumn form textarea {
+  width: 25vw;
+}
+.contact .twoColumn form div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  margin: 3%;
+}
+footer {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+footer h6 {
+  justify-self: center;
+  font-size: 1.5rem;
 }
