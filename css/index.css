@@ -202,6 +202,10 @@ body {
   font-size: 3rem;
   padding: 0 3% 10% 0;
 }
+.projectHighlights {
+  width: 90%;
+  position: absolute;
+}
 .projectHighlights h2 {
   padding: 2% 0;
 }
@@ -210,7 +214,7 @@ body {
 }
 .projectHighlights .rect {
   border: 1px solid pink;
-  margin: 2%;
+  margin: 10%;
   padding: 5% 2%;
 }
 .projectHighlights .right {
@@ -231,8 +235,22 @@ body {
 .projectHighlights .border {
   border: 2px solid green;
 }
+.projectHighlights .three {
+  background-color: #006eff;
+}
+.projectHighlights .two {
+  background-color: blue;
+}
+.projectHighlights .one {
+  background-color: darkblue;
+  margin-top: -15%;
+}
 .moreProjects {
+  margin-top: 50%;
   padding: 2% 0;
+}
+.moreProjects h3 {
+  text-align: center;
 }
 .moreProjects p {
   padding: 2% 0;
@@ -266,6 +284,7 @@ body {
 }
 .contact p {
   text-align: center;
+  padding: 1% 10%;
 }
 .contact .contactColumns {
   border: 1px solid blue;
@@ -290,14 +309,18 @@ body {
   align-items: flex-start;
 }
 .contact .twoColumn form input {
-  width: 25vw;
+  width: 28vw;
 }
 .contact .twoColumn form textarea {
-  width: 25vw;
+  width: 28vw;
 }
 .contact .twoColumn form div {
   display: grid;
   margin: 3%;
+}
+.contact .twoColumn form button {
+  align-self: flex-end;
+  margin: 2% 15% 5% 0;
 }
 footer {
   display: flex;
