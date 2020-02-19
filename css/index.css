@@ -203,8 +203,9 @@ body {
   padding: 0 3% 10% 0;
 }
 .projectHighlights {
-  width: 90%;
+  width: 110%;
   position: absolute;
+  margin: 0 -10%;
 }
 .projectHighlights h2 {
   padding: 2% 0;
@@ -213,9 +214,8 @@ body {
   padding: 2% 0;
 }
 .projectHighlights .rect {
-  border: 1px solid pink;
-  margin: 10%;
-  padding: 5% 2%;
+  margin: 0%;
+  padding: 3% 15% 10%;
 }
 .projectHighlights .right {
   margin: 0 0 8%;
@@ -223,31 +223,53 @@ body {
   flex-direction: column;
   align-items: flex-end;
   transform-origin: left;
-  transform: skew(-3deg, 3deg);
+  transform: skew(-2deg, 2deg);
+}
+.projectHighlights .right h2,
+.projectHighlights .right p {
+  transform: skew(2deg, -2deg);
 }
 .projectHighlights .left {
   margin: 0 0 8%;
   transform-origin: right;
-  transform: skew(3deg, -3deg);
+  transform: skew(2deg, -2deg);
   display: flex;
   flex-direction: column;
+}
+.projectHighlights .left h2,
+.projectHighlights .left p {
+  transform: skew(-2deg, 2deg);
 }
 .projectHighlights .border {
   border: 2px solid green;
 }
 .projectHighlights .three {
   background-color: #006eff;
+  margin-top: -12%;
 }
 .projectHighlights .two {
   background-color: blue;
+  color: white;
+  margin-top: -12%;
 }
 .projectHighlights .one {
   background-color: darkblue;
-  margin-top: -15%;
+  color: white;
+  margin-top: -12%;
 }
 .moreProjects {
+  position: absolute;
+  transform-origin: left;
+  transform: skew(-2deg, 2deg);
+  background-color: #2897ff;
   margin-top: 50%;
-  padding: 2% 0;
+  margin-left: -10%;
+  width: 110%;
+  padding: 5% 10%;
+}
+.moreProjects .moreHeading,
+.moreProjects .moreTiles {
+  transform: skew(2deg, -2deg);
 }
 .moreProjects h3 {
   text-align: center;
@@ -276,6 +298,8 @@ body {
   margin: 2% 5%;
 }
 .contact {
+  position: absolute;
+  margin-top: 100%;
   padding: 2% 0;
 }
 .contact h5 {

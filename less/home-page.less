@@ -34,8 +34,9 @@ body {
 }
 
 .projectHighlights {
-    width: 90%;
+    width: 110%;
     position: absolute;
+    margin: 0 -10%;
     h2 {
         padding: 2% 0;
     }
@@ -43,9 +44,8 @@ body {
         padding: 2% 0;
     }
     .rect {
-        border: 1px solid pink;
-        margin: 10%;
-        padding: 5% 2%;
+        margin: 0%;
+        padding: 3% 15% 10%;
     }
     .right {
         margin: 0 0 8%;
@@ -53,34 +53,56 @@ body {
         flex-direction: column;
         align-items: flex-end;
         transform-origin: left;
-        transform: skew(-3deg, 3deg);
+        transform: skew(-2deg, 2deg);
+        h2,
+        p {
+            transform: skew(2deg, -2deg);
+        }
     }
     .left {
         margin: 0 0 8%;
         transform-origin: right;
-        transform: skew(3deg, -3deg);
+        transform: skew(2deg, -2deg);
 
         display: flex;
         flex-direction: column;
+        h2,
+        p {
+            transform: skew(-2deg, 2deg);
+        }
     }
     .border {
         border: 2px solid green;
     }
     .three {
         background-color: rgb(0, 110, 255);
+        margin-top: -12%;
     }
     .two {
         background-color: blue;
+        color: white;
+        margin-top: -12%;
     }
     .one {
         background-color: darkblue;
-        margin-top: -15%;
+        color: white;
+        margin-top: -12%;
     }
 }
 
 .moreProjects {
+    position: absolute;
+    transform-origin: left;
+    transform: skew(-2deg, 2deg);
+    background-color: rgb(40, 151, 255);
     margin-top: 50%;
-    padding: 2% 0;
+    margin-left: -10%;
+    width: 110%;
+    padding: 5% 10%;
+    .moreHeading,
+    .moreTiles {
+        transform: skew(2deg, -2deg);
+    }
     h3 {
         text-align: center;
     }
@@ -110,6 +132,8 @@ body {
     }
 }
 .contact {
+    position: absolute;
+    margin-top: 100%;
     padding: 2% 0;
     h5 {
         text-align: center;
