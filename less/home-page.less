@@ -1,6 +1,7 @@
 body {
     width: 90%;
     margin: 0 5%;
+    overflow-x: hidden;
 }
 
 .tulsa {
@@ -45,7 +46,7 @@ body {
     }
     .rect {
         margin: 0%;
-        padding: 3% 15% 10%;
+        padding: 3% 15% 15%;
     }
     .right {
         margin: 0 0 8%;
@@ -55,10 +56,13 @@ body {
         transform-origin: left;
         transform: skew(-2deg, 2deg);
         h2,
-        p {
+        p,
+        button {
+            transform-origin: left;
             transform: skew(2deg, -2deg);
         }
     }
+
     .left {
         margin: 0 0 8%;
         transform-origin: right;
@@ -67,41 +71,43 @@ body {
         display: flex;
         flex-direction: column;
         h2,
-        p {
+        p,
+        button {
+            transform-origin: right;
             transform: skew(-2deg, 2deg);
         }
     }
     .border {
         border: 2px solid green;
     }
-    .three {
-        background-color: rgb(0, 110, 255);
-        margin-top: -12%;
+    .one {
+        background-color: #464655;
+        color: white;
+        margin-top: -14%;
     }
     .two {
-        background-color: blue;
+        background-color: #94958b;
         color: white;
-        margin-top: -12%;
+        margin-top: -13%;
     }
-    .one {
-        background-color: darkblue;
-        color: white;
-        margin-top: -12%;
+    .three {
+        background-color: #b7b6c1;
+        margin-top: -13%;
     }
 }
 
 .moreProjects {
     position: absolute;
     transform-origin: left;
-    transform: skew(-2deg, 2deg);
-    background-color: rgb(40, 151, 255);
-    margin-top: 50%;
+    transform: skew(2deg, -2deg);
+    background-color: #d5cfe1;
+    margin-top: 63%;
     margin-left: -10%;
     width: 110%;
-    padding: 5% 10%;
+    padding: 4% 10% 13%;
     .moreHeading,
     .moreTiles {
-        transform: skew(2deg, -2deg);
+        transform: skew(-2deg, 2deg);
     }
     h3 {
         text-align: center;
@@ -133,8 +139,16 @@ body {
 }
 .contact {
     position: absolute;
-    margin-top: 100%;
-    padding: 2% 0;
+    transform-origin: left;
+    transform: skew(-2deg, 2deg);
+    background-color: #eddfef;
+    margin-top: 129%;
+    margin-left: -10%;
+    width: 110%;
+    padding: 3% 10% 10%;
+    .contactArea {
+        transform: skew(2deg, -2deg);
+    }
     h5 {
         text-align: center;
         padding-bottom: 2%;
@@ -165,9 +179,13 @@ body {
             align-items: flex-start;
             input {
                 width: 28vw;
+                border-radius: 6px;
+                border: 1px solid black;
             }
             textarea {
                 width: 28vw;
+                border-radius: 6px;
+                border: 1px solid black;
             }
             div {
                 display: grid;
@@ -181,10 +199,18 @@ body {
     }
 }
 footer {
-    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    border: 1px solid red;
-    justify-content: space-between;
+    z-index: -1;
+    background-color: black;
+    color: white;
+    padding: 2% 1%;
+    .footed {
+        display: flex;
+        justify-content: space-between;
+    }
     h6 {
         justify-self: center;
         font-size: 1.5rem;
