@@ -34,81 +34,98 @@ body {
     }
 }
 
+.bChk(@color){border:1px dotted @color}
+
 .projectHighlights {
-    width: 110%;
-    position: absolute;
-    margin: 0 -10%;
+    
+    .border {
+    border: 2px solid green;
+    display: flex;
+    padding: 0 10%;
+
+    // width: 110%;
+    // position: absolute;
+    // margin: 0 -10%;
     h2 {
         padding: 2% 0;
     }
     p {
         padding: 2% 0;
     }
+    .websiteImage{
+    width: 30%;
+        .bChk(red);
+        img{
+            max-width: 100%;
+        }
+        
+    }
     .rect {
         margin: 0%;
-        padding: 3% 15% 15%;
+        // padding: 3% 15% 15%;
+        .bChk(blue)
     }
     .right {
+        padding: 3% 0 15% 15%;
         margin: 0 0 8%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        transform-origin: left;
-        transform: skew(-2deg, 2deg);
-        h2,
-        p,
-        button {
-            transform-origin: left;
-            transform: skew(2deg, -2deg);
-        }
+        // transform-origin: left;
+        // transform: skew(-2deg, 2deg);
+        // h2,
+        // p,
+        // button {
+        // transform-origin: left;
+        // transform: skew(2deg, -2deg);
+        // }
     }
 
     .left {
+        padding: 3% 15% 15% 0;
         margin: 0 0 8%;
-        transform-origin: right;
-        transform: skew(2deg, -2deg);
+        // transform-origin: right;
+        // transform: skew(2deg, -2deg);
 
         display: flex;
         flex-direction: column;
-        h2,
-        p,
-        button {
-            transform-origin: right;
-            transform: skew(-2deg, 2deg);
-        }
+        // h2,
+        // p,
+        // button {
+        //     transform-origin: right;
+        //     transform: skew(-2deg, 2deg);
     }
-    .border {
-        border: 2px solid green;
-    }
-    .one {
-        background-color: #464655;
-        color: white;
-        margin-top: -14%;
-    }
-    .two {
-        background-color: #94958b;
-        color: white;
-        margin-top: -13%;
-    }
-    .three {
-        background-color: #b7b6c1;
-        margin-top: -13%;
-    }
+}
+// .one {
+//     // background-color: #464655;
+//     // color: white;
+//     // margin-top: -14%;
+// }
+// .two {
+//     // background-color: #94958b;
+//     // color: white;
+//     // margin-top: -13%;
+// }
+// .three {
+//     // background-color: #b7b6c1;
+//     // margin-top: -13%;
+// }
+
 }
 
 .moreProjects {
-    position: absolute;
-    transform-origin: left;
-    transform: skew(2deg, -2deg);
-    background-color: #d5cfe1;
-    margin-top: 63%;
-    margin-left: -10%;
-    width: 110%;
+    // position: absolute;
+    // transform-origin: left;
+    // transform: skew(2deg, -2deg);
+    // background-color: #d5cfe1;
+    // margin-top: 63%;
+    // margin-left: -10%;
+    // width: 110%;
     padding: 4% 10% 13%;
-    .moreHeading,
-    .moreTiles {
-        transform: skew(-2deg, 2deg);
-    }
+    // .moreHeading,
+    // .moreTiles {
+    // transform: skew(-2deg, 2deg);
+    // }
     h3 {
         text-align: center;
     }
@@ -129,6 +146,15 @@ body {
         .tiles {
             border: 1px solid maroon;
             margin: 5% 10%;
+            flex-direction: column-reverse;
+            display: flex;
+            .image{
+                max-width: 100%;
+                img{
+                    border: 4px double grey;
+                    width:100%
+                }
+            }
         }
         h4,
         p,
@@ -138,17 +164,17 @@ body {
     }
 }
 .contact {
-    position: absolute;
-    transform-origin: left;
-    transform: skew(-2deg, 2deg);
+    // position: absolute;
+    // transform-origin: left;
+    // transform: skew(-2deg, 2deg);
     background-color: #eddfef;
-    margin-top: 129%;
-    margin-left: -10%;
-    width: 110%;
+    // margin-top: 129%;
+    // margin-left: -10%;
+    // width: 110%;
     padding: 3% 10% 10%;
-    .contactArea {
-        transform: skew(2deg, -2deg);
-    }
+    // .contactArea {
+    // transform: skew(2deg, -2deg);
+    // }
     h5 {
         text-align: center;
         padding-bottom: 2%;

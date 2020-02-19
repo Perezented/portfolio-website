@@ -203,78 +203,43 @@ body {
   font-size: 3rem;
   padding: 0 3% 10% 0;
 }
-.projectHighlights {
-  width: 110%;
-  position: absolute;
-  margin: 0 -10%;
+.projectHighlights .border {
+  border: 2px solid green;
+  display: flex;
+  padding: 0 10%;
 }
-.projectHighlights h2 {
+.projectHighlights .border h2 {
   padding: 2% 0;
 }
-.projectHighlights p {
+.projectHighlights .border p {
   padding: 2% 0;
 }
-.projectHighlights .rect {
+.projectHighlights .border .websiteImage {
+  width: 30%;
+  border: 1px dotted red;
+}
+.projectHighlights .border .websiteImage img {
+  max-width: 100%;
+}
+.projectHighlights .border .rect {
   margin: 0%;
-  padding: 3% 15% 15%;
+  border: 1px dotted blue;
 }
-.projectHighlights .right {
+.projectHighlights .border .right {
+  padding: 3% 0 15% 15%;
   margin: 0 0 8%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  transform-origin: left;
-  transform: skew(-2deg, 2deg);
 }
-.projectHighlights .right h2,
-.projectHighlights .right p,
-.projectHighlights .right button {
-  transform-origin: left;
-  transform: skew(2deg, -2deg);
-}
-.projectHighlights .left {
+.projectHighlights .border .left {
+  padding: 3% 15% 15% 0;
   margin: 0 0 8%;
-  transform-origin: right;
-  transform: skew(2deg, -2deg);
   display: flex;
   flex-direction: column;
 }
-.projectHighlights .left h2,
-.projectHighlights .left p,
-.projectHighlights .left button {
-  transform-origin: right;
-  transform: skew(-2deg, 2deg);
-}
-.projectHighlights .border {
-  border: 2px solid green;
-}
-.projectHighlights .one {
-  background-color: #464655;
-  color: white;
-  margin-top: -14%;
-}
-.projectHighlights .two {
-  background-color: #94958b;
-  color: white;
-  margin-top: -13%;
-}
-.projectHighlights .three {
-  background-color: #b7b6c1;
-  margin-top: -13%;
-}
 .moreProjects {
-  position: absolute;
-  transform-origin: left;
-  transform: skew(2deg, -2deg);
-  background-color: #d5cfe1;
-  margin-top: 63%;
-  margin-left: -10%;
-  width: 110%;
   padding: 4% 10% 13%;
-}
-.moreProjects .moreHeading,
-.moreProjects .moreTiles {
-  transform: skew(-2deg, 2deg);
 }
 .moreProjects h3 {
   text-align: center;
@@ -296,6 +261,15 @@ body {
 .moreProjects .moreTiles .tiles {
   border: 1px solid maroon;
   margin: 5% 10%;
+  flex-direction: column-reverse;
+  display: flex;
+}
+.moreProjects .moreTiles .tiles .image {
+  max-width: 100%;
+}
+.moreProjects .moreTiles .tiles .image img {
+  border: 4px double grey;
+  width: 100%;
 }
 .moreProjects .moreTiles h4,
 .moreProjects .moreTiles p,
@@ -303,17 +277,8 @@ body {
   margin: 2% 5%;
 }
 .contact {
-  position: absolute;
-  transform-origin: left;
-  transform: skew(-2deg, 2deg);
   background-color: #eddfef;
-  margin-top: 129%;
-  margin-left: -10%;
-  width: 110%;
   padding: 3% 10% 10%;
-}
-.contact .contactArea {
-  transform: skew(2deg, -2deg);
 }
 .contact h5 {
   text-align: center;
