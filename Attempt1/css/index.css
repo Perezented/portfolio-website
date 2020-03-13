@@ -1,0 +1,400 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Boogaloo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Boogaloo Regular'), local('Boogaloo-Regular'), url(https://fonts.gstatic.com/s/boogaloo/v11/kmK-Zq45GAvOdnaW6y1C9y4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Martel Sans Regular'), local('MartelSans-Regular'), url(https://fonts.gstatic.com/s/martelsans/v6/h0GsssGi7VdzDgKjM-4d8hjYx-s.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Martel Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Boogaloo", cursive;
+  font-size: 3rem;
+}
+h1 {
+  font-size: 5rem;
+}
+p {
+  font-size: 1.4rem;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+body {
+  width: 90%;
+  margin: 0 5%;
+  overflow-x: hidden;
+}
+.tulsa {
+  background-image: url(../img/jon-grogan-12WCUSkQxz0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 110vh;
+  width: 110%;
+  margin: 0 -5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.78;
+}
+.topHeading {
+  background-color: black;
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 6px white, 0 0 8px black, 0 0 15px black,
+        0 0 20px black;
+}
+.topHeading h1 {
+  opacity: 1;
+  font-size: 6.5rem;
+  padding: 3% 3% 5% 0;
+}
+.topHeading p {
+  font-size: 3rem;
+  padding: 0 3% 10% 0;
+}
+.projectHighlights .border {
+  border: 2px solid green;
+  display: flex;
+  padding: 0 10%;
+  width: 120%;
+  margin: 0 -10%;
+  z-index: 30;
+}
+.projectHighlights .border h2 {
+  padding: 2% 0;
+}
+.projectHighlights .border p {
+  padding: 2% 0;
+}
+.projectHighlights .border .websiteImage {
+  width: 30%;
+  margin-top: 2%;
+  border: 1px dotted red;
+}
+.projectHighlights .border .websiteImage img {
+  max-width: 100%;
+}
+.projectHighlights .border .rect {
+  margin: 0%;
+  border: 1px dotted blue;
+}
+.projectHighlights .border .right {
+  padding: 3% 0 15% 15%;
+  margin: 0 0 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.projectHighlights .border .right h2,
+.projectHighlights .border .right p,
+.projectHighlights .border .right button {
+  transform-origin: left;
+  transform: skew(2deg, -2deg);
+}
+.projectHighlights .border .left {
+  padding: 3% 15% 15% 0;
+  margin: 0 0 8%;
+  display: flex;
+  flex-direction: column;
+  transform-origin: right;
+  transform: skew(2deg, -2deg);
+}
+.projectHighlights .border .left h2,
+.projectHighlights .border .left p,
+.projectHighlights .border .left button {
+  transform-origin: right;
+  transform: skew(-2deg, 2deg);
+}
+.projectHighlights .one {
+  background-color: #464655;
+  color: white;
+  margin-top: -14%;
+}
+.projectHighlights .two {
+  background-color: #94958b;
+  color: white;
+  margin-top: -13%;
+}
+.projectHighlights .three {
+  background-color: #b7b6c1;
+  margin-top: -13%;
+}
+.moreProjects {
+  padding: 4% 10% 13%;
+  position: absolute;
+  transform-origin: left;
+  transform: skew(2deg, -2deg);
+  background-color: #d5cfe1;
+  margin-top: 63%;
+  margin-left: -10%;
+  width: 110%;
+}
+.moreProjects .moreHeading,
+.moreProjects .moreTiles {
+  transform: skew(-2deg, 2deg);
+}
+.moreProjects h3 {
+  text-align: center;
+}
+.moreProjects p {
+  padding: 2% 0;
+}
+.moreProjects .moreHeading {
+  display: flex;
+  flex-direction: column;
+}
+.moreProjects .moreTiles {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  border: 1px solid magenta;
+}
+.moreProjects .moreTiles .tiles {
+  border: 1px solid maroon;
+  margin: 5% 10%;
+  flex-direction: column-reverse;
+  display: flex;
+}
+.moreProjects .moreTiles .tiles .image {
+  max-width: 100%;
+}
+.moreProjects .moreTiles .tiles .image img {
+  border: 4px double grey;
+  width: 100%;
+}
+.moreProjects .moreTiles h4,
+.moreProjects .moreTiles p,
+.moreProjects .moreTiles button {
+  margin: 2% 5%;
+}
+.contact {
+  background-color: #eddfef;
+  padding: 3% 10% 10%;
+  position: absolute;
+  transform-origin: left;
+  transform: skew(-2deg, 2deg);
+  margin-top: 129%;
+  margin-left: -10%;
+  width: 110%;
+}
+.contact .contactArea {
+  transform: skew(2deg, -2deg);
+}
+.contact h5 {
+  text-align: center;
+  padding-bottom: 2%;
+}
+.contact p {
+  text-align: center;
+  padding: 1% 10%;
+}
+.contact .contactColumns {
+  border: 1px solid blue;
+  margin: 3% 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.contact .twoColumn {
+  border: 1px solid grey;
+  width: 40%;
+}
+.contact .twoColumn li {
+  padding: 1.5%;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.contact .twoColumn form {
+  border: 1px solid orangered;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact .twoColumn form input {
+  width: 28vw;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.contact .twoColumn form textarea {
+  width: 28vw;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.contact .twoColumn form div {
+  display: grid;
+  margin: 3%;
+}
+.contact .twoColumn form button {
+  align-self: flex-end;
+  margin: 2% 15% 5% 0;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: black;
+  color: white;
+  padding: 2% 1%;
+}
+footer .footed {
+  display: flex;
+  justify-content: space-between;
+}
+footer h6 {
+  justify-self: center;
+  font-size: 1.5rem;
+}
